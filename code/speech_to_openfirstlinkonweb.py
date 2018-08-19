@@ -42,10 +42,10 @@ except Exception as e:
     print (e)
 
 
-for item in soup.findAll('cite'):
+for item in soup.findAll('cite'): # will give all links
     print (item.text)
 
 print("ok\n")
 
-for item in soup.select(".r a"):
+for item in soup.select(".r a"): # will give heading of all options comes while searching
     print (item.get_text())
